@@ -14,7 +14,8 @@
 class Solution: SolutionProtocol {
 	func semaphore(isSemaphoreGreen: Bool) -> (Bool, String) {
 		// Beginning of the solution
-		
+        let semaphoreMessage = (isSemaphoreGreen) ? "Cross the road" : "Stop"
+    
 		// End of the solution
 		return (isSemaphoreGreen, semaphoreMessage)
 	}

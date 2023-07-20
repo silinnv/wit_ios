@@ -8,4 +8,10 @@
 
 // The beginning of the solution
 
+enum Weekday{
+    case monday, tuesday, wednesday, thursday, friday, saturday, sunday
+}
+
+let currentDay = Weekday.tuesday
+
 // Completion of the solution

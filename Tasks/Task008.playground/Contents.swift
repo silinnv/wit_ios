@@ -10,8 +10,8 @@
 class Solution: SolutionProtocol {
 	func leapYear(_ year: Int) -> Bool {
 		// Beginning of the solution
-		
-		// End of the solution
+        var isLeapYear = !(year < 0 || year % 4 != 0 || (year % 100 == 0 && year % 400 != 0))
+        
 		return isLeapYear
 	}
 }

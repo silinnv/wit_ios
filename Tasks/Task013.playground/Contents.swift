@@ -14,4 +14,16 @@
 
 // Beginning of the solution
 
+func makePyramid(_ number: Int) -> Array<Array<Int>>{
+    var resultArray = Array<Array<Int>>(repeating: [], count: number)
+    for num in 1...number {
+        let tmp = Array(repeating: num, count: num)
+        resultArray[num - 1] = tmp
+    }
+    return resultArray
+}
+
+let pyramid = makePyramid(4)
+print(pyramid)
+
 // End of the solution

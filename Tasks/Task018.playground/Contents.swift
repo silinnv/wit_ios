@@ -19,5 +19,8 @@ let students = [
 	("Julia", [11, 12, 9, 8, 7, 6, 9, 10, 11, 12])
 ]
 // The beginning of the solution
+let dictionary = students.reduce(into: [:]) { $0[$1.0] = $1.1 }
+print(dictionary)
+
 
 // Completion of the solution

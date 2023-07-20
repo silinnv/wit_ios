@@ -9,4 +9,15 @@
 
 // The beginning of the solution
 
+func printLength(_ str: String?) -> Int{
+    if (str ?? "").isEmpty{
+        return 0
+    } else {
+        return str!.count
+    }
+}
+
+print(printLength(nil))
+print(printLength(""))
+print(printLength("12345"))
 // Completion of the solution

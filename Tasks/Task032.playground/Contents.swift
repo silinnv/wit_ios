@@ -8,4 +8,14 @@
 
 // The beginning of the solution
 
+func getNumber(_ num:Int???) -> Int? {
+    guard let unwrappedNum = num else {
+        return nil
+    }
+    return unwrappedNum!
+}
+
+print(getNumber(nil))
+print(getNumber(2222))
+
 // Completion of the solution
