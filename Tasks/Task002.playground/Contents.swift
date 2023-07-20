@@ -8,6 +8,8 @@
 // MARK: - Solution
 //
 // Beginning of the solution
+var orderPrice: Double = 2000
+orderPrice *= 1.13
 
 // End of the solution
 

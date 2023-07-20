@@ -9,6 +9,12 @@
 //
 // Beginning of the solution
 
+let radius = 1
+var pi: Double = 3.1415
+
+var len: Double = 2 * pi * Double(radius)
+
+print("The circumference is: \(len)")
 // End of the solution
 
 // MARK: - Tests
