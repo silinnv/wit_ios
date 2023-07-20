@@ -18,4 +18,28 @@
 
 // The beginning of the solution
 
+struct Item {
+    let name: String
+    let weight: Float
+    
+    func printDescpirtion(){
+        print("\(self.name) weights \(self.weight) kg")
+    }
+}
+
+struct Box {
+    let color: String
+    var item: Item?
+    
+    mutating func put(_ item: Item){
+        self.item = item
+    }
+    
+    mutating func takeOff() -> Item? {
+        let tmp = self.item
+        self.item = nil
+        return tmp
+    }
+}
+
 // Completion of the solution

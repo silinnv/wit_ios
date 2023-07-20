@@ -9,4 +9,10 @@
 let array = [57, 83, 29, 42, 95, 11, 78, 66, 36, 72]
 // Beginning of the solution
 
+//let sum = array.reduce(0, +)
+var sum = 0
+for num in array{
+    sum += num
+}
+print(sum)
 // End of the solution

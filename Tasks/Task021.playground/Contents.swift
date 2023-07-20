@@ -7,4 +7,11 @@
 
 // The beginning of the solution
 
+let closure: (Int) -> Int = { num in
+    return num + num
+}
+print(closure(8))
+
+
+
 // Completion of the solution

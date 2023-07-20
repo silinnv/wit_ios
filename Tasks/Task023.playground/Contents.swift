@@ -14,4 +14,14 @@
 
 // The beginning of the solution
 
+func generateMultiplier(_ num1: Int) -> ((Int) -> Int) {
+    return { num2 in
+        return num1 * num2
+    }
+}
+
+let multiplierByTwo = generateMultiplier(2)
+let result = multiplierByTwo(5)
+print(result)
+
 // Completion of the solution

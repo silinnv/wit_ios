@@ -9,5 +9,13 @@
 
 let nums = [57, 83, 29, 42, 95, 11, 78, 66, 36, 72]
 // Beginning of the solution
+let oddNums = nums.filter{num in
+    return num % 2 != 0
+}
+let evenNums = nums.filter{num in
+    return num % 2 == 0
+}
+let resultNum = evenNums + oddNums
+print(resultNum)
 
 // End of the solution

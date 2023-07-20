@@ -8,6 +8,10 @@
 //
 // Beginning of the solution
 
+let table = 19
+let chair = 8
+let sum = chair + table
+
 // End of the solution
 
 // MARK: - Tests

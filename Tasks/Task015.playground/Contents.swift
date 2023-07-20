@@ -8,5 +8,6 @@
 let set1 = Set([11, 78, 66, 36, 72])
 let set2 = Set([57, 83, 29, 42, 95])
 // Beginning of the solution
-
+let resultSet = set1.union(set2)
+print(resultSet)
 // End of the solution

@@ -9,5 +9,33 @@
 // MARK: - Solution
 
 // The beginning of the solution
+enum Shape{
+    case circle(radius: Double)
+    case rectangle(side: Double)
+    
+    var descript: String{
+        switch self{
+        case .circle:
+            return "This is a circle"
+        case .rectangle:
+            return "This is a rectangle."
+        }
+    }
+    
+    func calculateArea() -> Double{
+        switch self {
+        case let .circle(radius):
+            return Double.pi * radius
+        case let .rectangle(side):
+            return side * side
+        }
+    }
+}
 
+let circle = Shape.circle(radius: 8)
+let area1 = circle.calculateArea()
+let rectangleDescpirtion = Shape.rectangle(side: 10).descript
+
+print(area1)
+print(rectangleDescpirtion)
 // Completion of the solution

@@ -8,4 +8,8 @@
 
 // The beginning of the solution
 
+let name: String? = nil
+let unwrappedName = name ?? "Anonymous"
+print(unwrappedName)
+
 // Completion of the solution

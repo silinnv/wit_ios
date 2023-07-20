@@ -9,6 +9,8 @@
 let nums1 = [11, 78, 66, 36, 83]
 let nums2 = [57, 83, 29, 42, 11]
 // The beginning of the solution
+let union = Array(Set(nums1+nums2))
+print(union)
 
 // Completion of the solution
 

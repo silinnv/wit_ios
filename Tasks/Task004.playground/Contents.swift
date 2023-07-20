@@ -9,6 +9,10 @@
 //
 // Beginning of the solution
 
+let radius = 1
+let pi = 3.1415
+let len = 2 * pi * Double(radius)
+
 // End of the solution
 
 // MARK: - Tests

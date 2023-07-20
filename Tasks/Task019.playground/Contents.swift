@@ -9,5 +9,14 @@
 
 let message = "⭐️👽👽🌕⭐️🌕🎲🌕"
 // The beginning of the solution
+var dictionary = Dictionary<Character, Int>()
+for emoji in Array(message){
+    if(dictionary.keys.contains(emoji)){
+        dictionary[emoji]! += 1
+    } else {
+        dictionary[emoji] = 1
+    }
+}
+print(dictionary)
 
 // Completion of the solution

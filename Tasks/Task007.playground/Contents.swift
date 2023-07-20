@@ -10,6 +10,17 @@
 class Solution: SolutionProtocol {
 	func minMax(_ a: Int, _ b: Int, _ c: Int) -> (Int, Int) {
 		// Beginning of the solution
+        var min = a
+        var max = a
+        
+        for num in [a, b, c]{
+            if (max < num) {
+                max = num
+            }
+            if (min > num){
+                min = num
+            }
+        }
 		
 		// End of the solution
 		return (min, max)

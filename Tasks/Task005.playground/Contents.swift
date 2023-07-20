@@ -12,6 +12,12 @@ import Foundation
 //
 // Beginning of the solution
 
+let leg1 = 17
+let leg2 = 35
+let area = Double(leg1) * Double(leg2) * 0.5
+let hypotenuse = hypot(Double(leg1), Double(leg2))
+let perimeter = Double(leg1) + Double(leg2) + hypotenuse
+
 // End of the solution
 
 // MARK: - Tests

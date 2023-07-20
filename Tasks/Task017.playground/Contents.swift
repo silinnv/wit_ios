@@ -9,6 +9,7 @@
 let set1 = Set([11, 78, 66, 36, 83, 57, 29, 42])
 let set2 = Set([57, 83, 29, 42, 66])
 // The beginning of the solution
-
+let result = set2.isSubset(of: set1)
+print(result)
 // Completion of the solution
 

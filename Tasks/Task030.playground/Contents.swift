@@ -9,4 +9,12 @@
 
 // The beginning of the solution
 
+func printLength(_ str: String?) -> Int{
+    guard let str = str else { return -1 }
+        return str.count
+}
+
+print(printLength(nil))
+print(printLength(""))
+print(printLength("12345"))
 // Completion of the solution

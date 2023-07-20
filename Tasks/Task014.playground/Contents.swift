@@ -7,5 +7,7 @@
 
 var nums = [57, 83, 29, 42, 95, 11, 78, 66, 36, 72]
 // Beginning of the solution
+let set = Set(nums)
+print(set)
 
 // End of the solution
