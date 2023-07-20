@@ -10,11 +10,8 @@
 // The beginning of the solution
 
 func printLength(_ str: String?) -> Int{
-    if (str ?? "").isEmpty{
-        return 0
-    } else {
-        return str!.count
-    }
+    guard let str = str else { return -1 }
+        return str.count
 }
 
 print(printLength(nil))

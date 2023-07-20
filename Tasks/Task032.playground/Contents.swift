@@ -10,12 +10,17 @@
 
 func getNumber(_ num:Int???) -> Int? {
     guard let unwrappedNum = num else {
-        return nil
+       return nil
     }
-    return unwrappedNum!
+    guard let unwrappedNum2 = unwrappedNum else {
+       return nil
+    }
+    
+    return unwrappedNum2
 }
 
 print(getNumber(nil))
 print(getNumber(2222))
+print(getNumber(.some(22)))
 
 // Completion of the solution

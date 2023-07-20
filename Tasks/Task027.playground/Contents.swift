@@ -10,8 +10,8 @@
 
 // The beginning of the solution
 enum Shape{
-    case circle
-    case rectangle
+    case circle(radius: Double)
+    case rectangle(side: Double)
     
     var descript: String{
         switch self{
@@ -22,19 +22,20 @@ enum Shape{
         }
     }
     
-    func calculateArea(_ num: Int) -> Double{
+    func calculateArea() -> Double{
         switch self {
-        case .circle:
-            return Double.pi * Double(num * num)
-        case .rectangle:
-            return Double (num * num)
+        case let .circle(radius):
+            return Double.pi * radius
+        case let .rectangle(side):
+            return side * side
         }
     }
 }
 
-let circleArea = Shape.circle.calculateArea(4)
-let rectangleDescpirtion = Shape.rectangle.descript
+let circle = Shape.circle(radius: 8)
+let area1 = circle.calculateArea()
+let rectangleDescpirtion = Shape.rectangle(side: 10).descript
 
-print(circleArea)
+print(area1)
 print(rectangleDescpirtion)
 // Completion of the solution

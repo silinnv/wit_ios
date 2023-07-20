@@ -8,6 +8,13 @@
 
 var nums = [57, 83, 29, 42, 95, 11, 78, 66, 36, 72]
 // Beginning of the solution
-nums.reverse()
+
+//nums.reverse()
+
+var tmp = Array<Int>()
+for num in stride(from: nums.count - 1, to: -1, by: -1){
+    tmp.append(nums[num])
+}
+nums = tmp
 print(nums)
 // End of the solution
