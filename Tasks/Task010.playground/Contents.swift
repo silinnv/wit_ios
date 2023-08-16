@@ -9,4 +9,9 @@
 var nums = [57, 83, 29, 42, 95, 11, 78, 66, 36, 72]
 // Beginning of the solution
 
+print("Array before reversing: \(nums)")
+
+nums.reverse()
+print("Array after reversing: \(nums)")
+
 // End of the solution

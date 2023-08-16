@@ -12,8 +12,25 @@ import Foundation
 //
 // Beginning of the solution
 
+let leg1: Int = 17
+let leg2: Int = 35
+
+var area: Double = 0.5 * Double(leg1) * Double(leg2)
+print("Area of the right triangle:  \(area)")
+
+var hypotenuse:Double = (sqrt(pow(Double(leg1), 2) + pow(Double(leg2), 2)))
+//print("Hypotenuse of the right triangle:  \(hypotenuse)")
+
+let roundedHypotenuse = String (format: "%.2f", hypotenuse)
+print("Perimeter of the right triangle:  \(roundedHypotenuse)")
+
+var perimeter: Double = Double(leg1) + Double(leg2) + hypotenuse
+//print("Perimeter of the right triangle:  \(perimeter)")
+
 // End of the solution
 
+let roundedPerimeter = String (format: "%.2f", perimeter)
+print("Perimeter of the right triangle:  \(roundedPerimeter)")
 // MARK: - Tests
 //
 // The code for running tests

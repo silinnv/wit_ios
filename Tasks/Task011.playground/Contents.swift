@@ -8,4 +8,10 @@
 let nums = [57, 83, 29, 42, 95, 11, 78, 66, 36, 72]
 // Beginning of the solution
 
+let evenArray = nums.filter {$0 % 2 == 0}
+
+print("Array with even values: \(evenArray)")
+
+
+
 // End of the solution

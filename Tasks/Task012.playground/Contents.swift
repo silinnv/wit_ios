@@ -10,4 +10,13 @@
 let nums = [57, 83, 29, 42, 95, 11, 78, 66, 36, 72]
 // Beginning of the solution
 
+let evenNums = nums.filter {$0 % 2 == 0}
+let oddNums = nums.filter {$0 % 2 != 0}
+
+let sortedNums = evenNums + oddNums
+
+
+
+print("New array order: \(sortedNums)")
+
 // End of the solution

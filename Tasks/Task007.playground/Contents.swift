@@ -10,6 +10,25 @@
 class Solution: SolutionProtocol {
 	func minMax(_ a: Int, _ b: Int, _ c: Int) -> (Int, Int) {
 		// Beginning of the solution
+        
+        //Initialize max and min variable for the first number
+        
+        var max = a
+        var min = a
+        
+        // Compare
+        
+        if b > max {
+            max = b
+        } else if b < min {
+            min = b
+        }
+        
+        if c > max {
+            max = c
+        } else if c < min {
+            min = c
+        }
 		
 		// End of the solution
 		return (min, max)

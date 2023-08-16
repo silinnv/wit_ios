@@ -8,11 +8,13 @@
 // MARK: - Solution
 
 class Solution: SolutionProtocol {
-	func leapYear(_ year: Int) -> Bool {
-		// Beginning of the solution
+    func leapYear(_ year: Int) -> Bool {
+        // Beginning of the solution
+              
+        //A leap year is divisible by 4 but not divisible by 100 unless it is also divisible by 400
 		
 		// End of the solution
-		return isLeapYear
+		return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)
 	}
 }
 

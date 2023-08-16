@@ -7,7 +7,10 @@
 // MARK: - Solution
 //
 // Beginning of the solution
+let table = 19
+let chair = 8
 
+let sum = table + chair
 // End of the solution
 
 // MARK: - Tests

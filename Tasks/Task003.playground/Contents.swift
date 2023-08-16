@@ -8,6 +8,9 @@
 //
 // Beginning of the solution
 
+let interstellarRaiting = 8.9
+let shrekRaiting  = 8.3
+let maxRaiting = max (interstellarRaiting, shrekRaiting)
 // End of the solution
 
 // MARK: - Tests
